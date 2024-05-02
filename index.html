@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./pokemon.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <header class="header-home">
+            <div class="logo-wrapper">
+                <img src="./assets/pokeball.svg" alt="pokeball-img" />
+                <h1>Pokedex</h1>
+            </div>
+            <div class="search-wrapper">
+                <img src="./assets/search.svg" alt="search-icon" class="search-icon">
+                <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input">
+                <img src="./assets/cross.svg" alt="search-cross-icon" class="search-cross-icon" id="search-cross-icon">
+            </div>
+            <div class="sort-wrapper">
+                <div class="sort-wrap">
+                    <img src="./assets/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
+                </div>
+            </div>
+            <div class="filter-wrapper">
+                <p class="body2-fonts">Sort by:</p>
+                <div class="filter-wrap">
+                    <div>
+                        <input type="radio" name="filters" id="number" value="number" checked>
+                        <label for="number" class="body3-fonts">Number</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="filters" id="name" value="name">
+                        <label for="name" class="body3-fonts">Name</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="pokemon-list">
+            <div class="container">
+                <div class="list-wrapper">
+
+                </div>
+            </div>
+            <div class="not-found-message">Pokemon not found</div>
+        </section>
+    </main>
+</body>
+</html>
